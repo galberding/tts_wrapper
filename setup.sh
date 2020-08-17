@@ -1,6 +1,6 @@
 # Use this script to create a new environment, install dependencies and download the used models
 
-ENV_NAME=tts
+ENV_NAME=tttr
 
 function setup_dependencies(){
     # Enter env:
