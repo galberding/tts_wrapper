@@ -1,3 +1,13 @@
+# Models
+tts_model.pth.tar
+config.json
+vocoder_model.pth.tar
+config_vocoder.json
+scale_stats.npy
+output/
+TTS/
+*.wav
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
