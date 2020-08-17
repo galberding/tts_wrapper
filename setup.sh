@@ -1,15 +1,15 @@
 # Use this script to create a new environment, install dependencies and download the used models
 
-ENV_NAME=tttr
+ENV_NAME=tts
 
 function setup_dependencies(){
     # Enter env:
     conda activate $ENV_NAME
-    if [ $? == 0 ]; then
+    if [ $? == 1 ]; then
         echo "Creating new environment:"
         conda create -n $ENV_NAME python=3.8
         conda activate $ENV_NAME
-        if [ $? == 0 ]; then
+        if [ $? == 1 ]; then
             echo "Cannot enter conda environment. Is it installed?"
             exit 1
         fi
@@ -32,3 +32,5 @@ function setup_dependencies(){
     cd ..
     # Dependencies should be in place
 }
+
+setup_dependencies
